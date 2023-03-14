@@ -22,7 +22,7 @@ const ImageGallery = ({ query }) => {
     setIsLoading(true);
     setPage(1);
 
-    getImage(query, page)
+    getImage(query, 1)
       .then(response => {
         setHits(response.data.hits);
         setIsLoading(false);
