@@ -29,6 +29,7 @@ const ImageGallery = ({ query }) => {
         setTotalHits(response.data.totalHits);
       })
       .catch(error => console.log(error));
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
 
   useEffect(() => {
@@ -45,6 +46,7 @@ const ImageGallery = ({ query }) => {
         setTotalHits(response.data.totalHits);
       })
       .catch(error => console.log(error));
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   const clickLoadMore = () => {
